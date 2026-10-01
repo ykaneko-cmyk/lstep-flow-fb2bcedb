@@ -1,0 +1,121 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>ローカルアンバサダー徹底解説講座 面談動線</title><style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1f2937;--mute:#6b7280;--line:#d1d5db;--ok:#15803d;--ng:#b45309;--bad:#b91c1c;
+--s1:#0ea5e9;--s2:#6366f1;--s3:#f59e0b;--s4:#10b981;--s5:#ef4444;--s6:#8b5cf6}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.55 -apple-system,"Hiragino Sans","Noto Sans JP",sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:16px}h1{font-size:20px;margin:0 0 4px}h2{font-size:15px;margin:0 0 8px}
+.sub{color:var(--mute);font-size:12px;margin-bottom:14px}.badge{display:inline-block;border-radius:999px;padding:1px 8px;font-size:11px;background:#e5e7eb;margin-left:6px}
+.badge.warn{background:#fef3c7;color:#92400e}.badge.ok{background:#dcfce7;color:#166534}.badge.bad{background:#fee2e2;color:#991b1b}
+.stage{display:grid;grid-template-columns:120px 1fr;gap:12px;margin-bottom:6px}.stage .lab{font-weight:700;font-size:13px;padding-top:10px;color:#111}
+.stage .lab small{display:block;font-weight:400;color:var(--mute);font-size:11px}
+.cards{display:flex;gap:10px;overflow-x:auto;padding-bottom:4px}.card{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--c,#999);border-radius:8px;padding:10px 12px;min-width:260px;max-width:420px;flex:1 1 300px}
+.card h3{font-size:13px;margin:0 0 6px}.card ol,.card ul{margin:4px 0 4px 18px;padding:0}.card li{margin:1px 0;font-size:12.5px}.card .k{color:var(--mute);font-size:11.5px}
+.arrow{grid-column:2;color:var(--mute);font-size:18px;line-height:1;margin:0 0 6px 24px}
+details{margin:2px 0}summary{cursor:pointer;color:#2563eb;font-size:12px}pre{white-space:pre-wrap;background:#f3f4f6;border-radius:6px;padding:8px;font-size:12px;margin:4px 0;font-family:inherit}
+table{border-collapse:collapse;width:100%;font-size:12.5px;background:#fff}th,td{border:1px solid var(--line);padding:5px 7px;vertical-align:top;text-align:left}th{background:#1f4a7d;color:#fff;position:sticky;top:0}
+td.ok{background:#f0fdf4}td.warn{background:#fffbeb}td.bad{background:#fef2f2}.small{font-size:11.5px;color:var(--mute)}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}.note{background:#fff7ed;border:1px solid #fdba74;border-radius:8px;padding:10px 12px;margin:10px 0}
+.hdr{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}.hdr a{font-size:12px}
+@media (max-width:640px){.stage{grid-template-columns:1fr}.arrow{grid-column:1;margin-left:8px}.card{min-width:85vw}}
+@media print{.cards{display:block}.card{max-width:none;break-inside:avoid;margin-bottom:8px}}
+</style></head><body><div class="wrap"><div class="hdr"><div><h1>ローカルアンバサダー徹底解説講座 <span class="small">login 112789</span></h1><div class="sub">面談申し込み→実施→面談後の動線（LSTEP設定の読み取り・2026-10-01 20:49 時点）</div></div><div><a href="index.html">口座一覧</a>　<a href="compare.html">27口座の比較表</a></div></div><h2 style="margin-top:6px">📏 標準フローとの違い <span class="small">（標準＝<a href="flow_standard.html">標準フロー</a>／出典 <a href="https://docs.google.com/spreadsheets/d/19GNl5BMKsFqgan61iF7gbqGX8aNTClmy6hUVmOdMkgQ/edit#gid=1811085342" target="_blank">Lステ設定</a>）</span></h2><table style="margin-bottom:14px"><tr><th style="width:120px">工程</th><th>標準の型</th><th>この口座</th><th style="width:60px">判定</th></tr><tr><td>① 入口</td><td class="small">審査申込フォームを挟まず、LP・リッチメニューからカレンダーへ直接予約</td><td class="warn">審査申込フォーム（2本）に回答→回答後に自動でカレンダー案内</td><td class="warn">≠ 違う</td></tr><tr><td>④ カレンダー</td><td class="small">面談カレンダー1本。CS担当者ごとの非表示枠で自動振り分け・[予約中]の人は予約不可</td><td class="warn">面談カレンダー1本（LOCAL AMBASSADOR PROJECT審査面談: 枠4）・[予約中]による予約制限なし</td><td class="warn">≠ 違う</td></tr><tr><td>④ 予約完了時</td><td class="small">「予約日時の確認」＋「予約確認カルーセル」を送り、OK！タップで要項とヒアリングフォーム依頼。24時間未反応なら自動キャンセル</td><td class="ok">予約確認カルーセルあり・24時間自動キャンセルあり・テンプレ送信 2本</td><td class="ok">＝ 同じ</td></tr><tr><td>④ CS担当者の決まり方</td><td class="small">予約枠（CS担当者）に応じて【条件ON】で担当者タグを追加→タグのアクションで CS担当者／本名／面談URL／対応マーク を自動代入</td><td class="ok">予約枠別の条件付きタグあり・タグのアクション4点そろい（5人分）</td><td class="ok">＝ 同じ</td></tr><tr><td>④ キャンセル時</td><td class="small">[予約中]解除・対応マーク「予約キャンセル」・[キャンセル日]に実行日</td><td class="ok">タグ[予約中]を解除 対応マークに予約キャンセルを代入 友だち情報 [キャンセル日] に(アクションの実行日時)を代入</td><td class="ok">＝ 同じ</td></tr><tr><td>⑤ リマインダ</td><td class="small">前日20:02／当日8:02／開始30分前 の3本</td><td class="ok">0日前 08:02・1日前 20:02・開始30分前</td><td class="ok">＝ 同じ</td></tr><tr><td>⑥ 面談後</td><td class="small">郵送書面送付先フォームの回答で [実施][F成約]タグ＋成約日を自動記録。実施／失注／成約見込などは手動タグ</td><td class="ok">郵送書面フォームあり・記録用タグ12本・友だち情報12項目</td><td class="ok">＝ 同じ</td></tr></table><div class="note"><b>手動操作の可能性（CS担当者に確認）</b><ul><li>予約変更時アクション未設定のカレンダーあり→変更連絡は手動の可能性</li></ul></div><div class="stage"><div class="lab">① 入口<small>フォーム／カレンダーへの誘導</small></div><div class="cards"><div class="card" style="--c:var(--s1)"><h3>リッチメニュー</h3><ul><li>「審査申込後：ドキュメンタリー」→ カレンダー: 短縮リンク https://lstep.app/PQx0sai</li><li>「審査募集終了まであと1時間」→ カレンダー: LOCAL AMBASSADOR PROJECT審査面談</li><li>「審査募集終了まであと8時間」→ カレンダー: LOCAL AMBASSADOR PROJECT審査面談</li><li>「審査受付スタート」→ カレンダー: LOCAL AMBASSADOR PROJECT審査面談</li><li>「Day4」→ カレンダー: 短縮リンク https://lstep.app/blE4P3k</li><li>「Day3」→ カレンダー: 短縮リンク https://lstep.app/blE4P3k</li><li>「Day2」→ カレンダー: 短縮リンク https://lstep.app/blE4P3k</li></ul></div><div class="card" style="--c:var(--s1)"><h3>シナリオ配信からの誘導</h3><ul><li>「予約後メッセージ」0日目 22:00 → カレンダー: 本文に「予約」の記載のみ〈自動（アクションから購読）〉</li><li>「予約後メッセージ」1日目 00:00 → カレンダー: LOCAL AMBASSADOR PROJECT審査面談〈自動（アクションから購読）〉</li><li>「予約後メッセージ」1日目 02:00 → フォーム: ローカルアンバサダー｜審査前ヒアリングフォーム〈自動（アクションから購読）〉</li></ul></div></div></div><div class="arrow">↓</div><div class="stage"><div class="lab">② 審査申込フォーム<small>回答後に自動で起きること</small></div><div class="cards"><div class="card" style="--c:var(--s2)"><h3>ローカルアンバサダー｜審査前ヒアリングフォーム<span class="badge">回答 12</span> <span class="badge ok">カレンダー案内あり</span></h3><details><summary>設問 4問</summary><ul><li>【1】いつ頃までに、今の状況を変えたいとお考えですか？（必須）</li><li>【2】ご希望の分野について、現在の検討状況に最も近いものをお選びください。（必須）</li><li>【3】この分野について、これまでどこまで行動されていますか？（必須）</li><li>【4】今回のことについて、周りの方に話していますか？（必須）</li></ul></details><div class="k">回答後アクション</div><ol><li>テンプレ[②ヒアリング回答後 ドキュメンタリー案内]を送信<details><summary>文言: ②ヒアリング回答後 ドキュメンタリー案内</summary><pre>ヒアリングフォームのご回答、
+ありがとうございます。
+
+内容を確認させていただきますので、
+少々お待ちください。
+
+━━━━━━━━━━━━━━
+
+
+お待ちいただいている間に、
+1本の映像をお届けします。
+
+
+ローカルアンバサダーとして
+実際に海外で活動しているかなさんが、
+
+現地でどんな日々を過ごし、
+どんな人たちと関わっているのか。
+
+
+その裏側に密着した
+ドキュメンタリー映像です。
+
+
+▼ 密着ドキュメンタリーはこちら
+https://lstep.app/PQx0sai
+
+
+観光ガイドとも、
+海外旅行とも違う。
+
+「その国で暮らし、伝える」
+という生き方のリアルが映っています。
+
+
+ぜひご覧ください。
+
+
+LOCAL AMBASSADOR PROJECT 運営事務局
+
+
+※ご利用の端末によっては、ミュートを解除できず音声が聞こえない場合があります。その際は、このLINEにご返信ください。</pre></details></li><li>タグ[審査ヒアリングフォー...]を追加</li></ol></div><div class="card" style="--c:var(--s2)"><h3>一次審査フォーム<span class="badge">回答 2</span> <span class="badge warn">カレンダー案内なし</span></h3><details><summary>設問 0問</summary><ul><li class="k">なし</li></ul></details><div class="k">回答後アクション</div><ol><li>タグ[審査申込済み]を追加</li><li>シナリオ[一次審査通過＋面談日程調整]を開始</li><li>テキスト[回答を受け...]を送信</li><li>メニュー[審査申込後：ドキュメンタリー]に変更</li><li>友だち情報 [申込日] に(アクションの実行日時)を代入</li></ol></div></div></div><div class="arrow">↓</div><div class="stage"><div class="lab">③ 日程調整<small>カレンダーURLをどう届けるか</small></div><div class="cards"><div class="card" style="--c:var(--s3)"><h3>カレンダー案内の経路</h3><ul><li>フォーム「ローカルアンバサダー｜審査前ヒアリングフォーム」の回答後に自動送信</li><li>シナリオ「予約後メッセージ」〈自動（アクションから購読）〉→ 本文に「予約」の記載のみ</li><li>シナリオ「予約後メッセージ」〈自動（アクションから購読）〉→ LOCAL AMBASSADOR PROJECT審査面談</li><li>リッチメニュー「審査申込後：ドキュメンタリー」→ 短縮リンク https://lstep.app/PQx0sai</li><li>リッチメニュー「審査募集終了まであと1時間」→ LOCAL AMBASSADOR PROJECT審査面談</li><li>リッチメニュー「審査募集終了まであと8時間」→ LOCAL AMBASSADOR PROJECT審査面談</li><li>リッチメニュー「審査受付スタート」→ LOCAL AMBASSADOR PROJECT審査面談</li><li>リッチメニュー「Day4」→ 短縮リンク https://lstep.app/blE4P3k</li><li>リッチメニュー「Day3」→ 短縮リンク https://lstep.app/blE4P3k</li><li>リッチメニュー「Day2」→ 短縮リンク https://lstep.app/blE4P3k</li></ul></div></div></div><div class="arrow">↓</div><div class="stage"><div class="lab">④ カレンダー予約<small>面談系 1本</small></div><div class="cards"><div class="card" style="--c:var(--s4);min-width:340px"><h3>LOCAL AMBASSADOR PROJECT審査面談</h3><div class="k">受付 3日前〜0日前／単位 30分／本人の変更 不可・キャンセル 不可／同時予約 制限なし</div><div class="k">取得項目: お名前／お名前（カナ）／年齢／性別／ローカルアンバサダーになりたいと思った『キッカケ』や『志望動機』を教えてください</div><details><summary>予約枠 4（CS担当者）</summary><ul><li>水野 達也（優先度 1・非表示） 絞り込み: 絞り込みあり（内容はLSTEP画面で要確認）</li><li>池本 純（優先度 1・非表示） 絞り込み: 絞り込みあり（内容はLSTEP画面で要確認）</li><li>植津 陽香（優先度 1・非表示） 絞り込み: 絞り込みあり（内容はLSTEP画面で要確認）</li><li>白土 祐樹（優先度 -1・非表示）</li></ul></details><div class="k" style="margin-top:6px"><b>予約完了時</b></div><ol><li>タグフォルダ[【CS】担当者]を解除</li><li>タグ[予約確認カルーセルタ...][自動キャンセル][事前キャンセル][当日キャンセル][無断キャンセル]を解除</li><li>友だち情報 [キャンセル日] を消去</li><li>タグ[予約中][申込][予約]を追加</li><li>友だち情報 [申込日] に(アクションの実行日時)を代入</li><li>テンプレ[予約日時の確認]を送信<details><summary>文言: 予約日時の確認</summary><pre>【審査面談の予約を受け付けました】
+
+[name]さん
+
+下記日時にて審査面談を行います。
+
+━━━━━━━━━━━━━
+[context.reserve.register.date_time_range_for_display]
+━━━━━━━━━━━━━
+
+⭕️ 日時が確定でよろしければ「OK」ボタンをクリックしてください。
+
+
+（※）日程変更をご希望の際は、必ず以下URLから前回の予約をキャンセルのうえ、再予約をお願いいたします。
+
+▼ 予約変更はこちら
+https://liff.line.me/2010955726-qax5SVwy?liff_id=2010955726-qax5SVwy&amp;is=aiziybU5gi&amp;tab=history</pre></details></li><li>テンプレ[予約確認カルーセル]を送信<details><summary>文言: 予約確認カルーセル</summary><pre>【フレックスメッセージ】</pre></details></li><li>シナリオ[予約後メッセージ]を0日目から開始</li><li>【条件ON】タグ[白土 祐樹]を追加 <span class="k">〔条件: カレンダー予約 【LOCAL AMBASSADOR PROJECT審査面談】 予約枠:【白土 祐樹】 ステータス:【予約済み】〕</span></li><li>【条件ON】タグ[水野 達也]を追加 <span class="k">〔条件: カレンダー予約 【LOCAL AMBASSADOR PROJECT審査面談】 予約枠:【水野 達也】 ステータス:【予約済み】〕</span></li><li>【条件ON】タグ[佐藤 友里]を追加 <span class="k">〔条件: カレンダー予約 【LOCAL AMBASSADOR PROJECT審査面談】 予約枠:【削除された予約枠(!!再設定が必要です!!)】 ステータス:【予約済み】〕</span></li><li>【条件ON】タグ[池本 純]を追加 <span class="k">〔条件: カレンダー予約 【LOCAL AMBASSADOR PROJECT審査面談】 予約枠:【池本 純】 ステータス:【予約済み】〕</span></li><li>メニュー[審査申込後：ドキュメンタリー]に変更</li><li>【条件ON】タグ[植津 陽香]を追加 <span class="k">〔条件: カレンダー予約 【LOCAL AMBASSADOR PROJECT審査面談】 予約枠:【植津 陽香】 ステータス:【予約済み】〕</span></li></ol><div class="k"><b>予約変更時</b></div><p class="k">設定なし</p><div class="k"><b>キャンセル時</b></div><ol><li>タグ[予約中]を解除</li><li>対応マークに予約キャンセルを代入</li><li>友だち情報 [キャンセル日] に(アクションの実行日時)を代入</li></ol><details><summary>📏 このカレンダーの標準との差 ⚠️5件</summary><ul class="small"><li>受付開始: 標準「5日前（難しければ7日前）」→ 実際「3日前」</li><li>受付締切: 標準「18時間前（難しければ24時間前）」→ 実際「0日前」</li><li>友だちによる変更・キャンセル: 標準「両方とも許可」→ 実際「変更=不可・キャンセル=不可」</li><li>予約枠: 標準「CS担当者ごとの枠・全部非表示・タグ[予約中]を除外」→ 実際「枠4・非表示4・予約中除外0」</li><li>予約時の取得項目: 標準「お名前／お名前(カナ)／年齢／職業…の順」→ 実際「お名前／お名前（カナ）／年齢／性別／ローカルアンバサダーになりたいと思った『キッカケ』や『志望動機』を教えてください」</li></ul></details></div></div></div><div class="arrow">↓</div><div class="stage"><div class="lab">⑤ リマインダ<small>カレンダー内蔵</small></div><div class="cards"><div class="card" style="--c:var(--s5)"><h3>LOCAL AMBASSADOR PROJECT審査面談</h3><ul><li><b>1日前 20:02</b> テンプレ[審査前日リマインド(20:00)]を送信<details><summary>文言: 審査前日リマインド(20:00)</summary><pre>[name]さん
+
+[CS担当者]です。
+
+いよいよ明日、審査面談となりました。
+当日のご案内です。
+
+🗓 [context.reserve.reminder.date_time_range_for_display]
+
+▼審査面談URL
+[面談URL]
+
+■ ご参加方法
+・5分前から入室できます
+・カメラONでご参加ください。
+
+緊張されるかと思いますが、リラックスして臨んでいただければと思います。
+
+当日、面談を受ける際に2点お願いがございます。
+
+【当日のお願い】
+① 通信環境が安定した場所からのご参加をお願いいたします。
+
+② 周囲に人がいない、本音を話せる環境からのご参加をお願いいたします。
+
+※カフェなど人の出入りがある場所ですと、正確な審査が難しくなってしまいますのでご注意ください。
+
+何か不明点があればお気軽にどうぞ。
+明日お会いできるのを楽しみにしています！
+
+[CS担当者]</pre></details></li><li><b>開始30分前</b> テンプレ[審査当日リマインド(30分前)]を送信<details><summary>文言: 審査当日リマインド(30分前)</summary><pre>[name]さん
+まもなく審査面談のお時間です。
+
+▼こちらからご参加ください
+[面談URL]
+
+お会いできるのを楽しみにしています！
+
+[CS担当者]</pre></details></li><li><b>0日前 08:02</b> テンプレ[審査当日リマインド(8:00)]を送信<details><summary>文言: 審査当日リマインド(8:00)</summary><pre>[name]さん、おはようございます。
+
+いよいよ本日、審査面談ですね。
+
+お話しできることを楽しみにしております！
+
+後ほど、よろしくお願いいたします。</pre></details></li></ul></div></div></div><div class="arrow">↓</div><div class="stage"><div class="lab">⑥ 面談実施→面談後<small>記録に使う項目</small></div><div class="cards"><div class="card" style="--c:var(--s6)"><h3>CS担当者タグのアクション（担当者が決まった時）</h3><table><tr><th>タグ</th><th>CS担当者</th><th>本名</th><th>面談URL</th><th>対応マーク</th></tr><tr><td>植津 陽香</td><td class="ok">✅</td><td class="ok">✅</td><td class="ok">✅</td><td class="ok">✅</td></tr><tr><td>白土 祐樹</td><td class="ok">✅</td><td class="ok">✅</td><td class="ok">✅</td><td class="ok">✅</td></tr><tr><td>池本 純</td><td class="ok">✅</td><td class="ok">✅</td><td class="ok">✅</td><td class="ok">✅</td></tr><tr><td>水野 達也</td><td class="ok">✅</td><td class="ok">✅</td><td class="ok">✅</td><td class="ok">✅</td></tr><tr><td>佐藤 友里</td><td class="ok">✅</td><td class="ok">✅</td><td class="ok">✅</td><td class="ok">✅</td></tr></table></div><div class="card" style="--c:var(--s6)"><h3>面談後の記録</h3><div class="k">友だち情報</div><ul><li>キャンセル日</li><li>実施日</li><li>成約日</li><li>日付チェック完了日</li><li>キャンセル理由</li><li>着座理由</li><li>真の欲求</li><li>失注理由</li><li>成約理由</li><li>支払方法</li><li>支払プラン</li><li>録画URL</li></ul><div class="k">タグ</div><ul><li>事前キャンセル</li><li>当日キャンセル</li><li>無断キャンセル</li><li>実施</li><li>失注</li><li>成約見込</li><li>F成約</li><li>一括着金</li><li>D成約</li><li>B成約</li><li>クーリングオフ</li><li>自動キャンセル</li></ul><div class="k">フォーム</div><ul><li>【通常用】郵送書面送付先情報入力フォーム</li><li>【その他用】郵送書面送付先情報入力フォーム</li></ul></div></div></div><h2 style="margin-top:18px">通知・その他</h2><div class="cols"><div class="card"><h3>通知（誰に・いつ）</h3><ul><li>ローカルアンバサダー（MC）_@164wxfga → PA管理（有効；service_send_count_full・service_send_count_warning・service_loa_send_count_full・service_loa_send_count_warning）</li><li>返信_ローカルアンバサダーPJ → PA管理（有効；message_normal・message_with_brackets・service_send_count_full・service_send_count_warning）</li><li>Lステップ通知 → 水野（有効；message_normal・message_with_brackets・taiou_mark_changed・salon_reservation_reserved）</li><li>CS通知_ローカルアンバサダー_植津 陽香 → PA管理（有効；message_normal・tag_attached・service_send_count_full・service_send_count_warning）</li><li>CS通知_ローカルアンバサダー_水野 達也 → PA管理（有効；message_normal・tag_attached・service_send_count_full・service_send_count_warning）</li><li>CS通知_ローカルアンバサダー_池本 純 → PA管理（有効；message_normal・tag_attached・service_send_count_full・service_send_count_warning）</li></ul></div><div class="card"><h3>面談以外のカレンダー（対象外・名前のみ）</h3><ul><li>Webinar日程変更用カレンダー［ウェビナー・日程調整］</li></ul></div><div class="card"><h3>暫定標準（Lステ設定）との差 <span class="badge warn">⚠️ 5 / 19</span></h3><details><summary>⚠️ の一覧</summary><ul><li>No.22 LOCAL AMBASSADOR PROJECT審査面談: 受付開始: 標準「5日前（難しければ7日前）」→ 実際「3日前」</li><li>No.23 LOCAL AMBASSADOR PROJECT審査面談: 受付締切: 標準「18時間前（難しければ24時間前）」→ 実際「0日前」</li><li>No.28/29 LOCAL AMBASSADOR PROJECT審査面談: 友だちによる変更・キャンセル: 標準「両方とも許可」→ 実際「変更=不可・キャンセル=不可」</li><li>No.36 LOCAL AMBASSADOR PROJECT審査面談: 予約枠: 標準「CS担当者ごとの枠・全部非表示・タグ[予約中]を除外」→ 実際「枠4・非表示4・予約中除外0」</li><li>No.49 LOCAL AMBASSADOR PROJECT審査面談: 予約時の取得項目: 標準「お名前／お名前(カナ)／年齢／職業…の順」→ 実際「お名前／お名前（カナ）／年齢／性別／ローカルアンバサダーになりたいと思った『キッカケ』や『志望動機』を教えてください」</li></ul></details></div></div><p class="small" style="margin-top:14px">生成 2026-10-01 20:56／読み取り専用（LSTEPには何も書いていません）／表（Googleスプレッドシート）と同じデータから自動生成</p></div></body></html>

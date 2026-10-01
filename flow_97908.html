@@ -1,0 +1,87 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>【L2】エモクリ養成オンライン講座 面談動線</title><style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1f2937;--mute:#6b7280;--line:#d1d5db;--ok:#15803d;--ng:#b45309;--bad:#b91c1c;
+--s1:#0ea5e9;--s2:#6366f1;--s3:#f59e0b;--s4:#10b981;--s5:#ef4444;--s6:#8b5cf6}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.55 -apple-system,"Hiragino Sans","Noto Sans JP",sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:16px}h1{font-size:20px;margin:0 0 4px}h2{font-size:15px;margin:0 0 8px}
+.sub{color:var(--mute);font-size:12px;margin-bottom:14px}.badge{display:inline-block;border-radius:999px;padding:1px 8px;font-size:11px;background:#e5e7eb;margin-left:6px}
+.badge.warn{background:#fef3c7;color:#92400e}.badge.ok{background:#dcfce7;color:#166534}.badge.bad{background:#fee2e2;color:#991b1b}
+.stage{display:grid;grid-template-columns:120px 1fr;gap:12px;margin-bottom:6px}.stage .lab{font-weight:700;font-size:13px;padding-top:10px;color:#111}
+.stage .lab small{display:block;font-weight:400;color:var(--mute);font-size:11px}
+.cards{display:flex;gap:10px;overflow-x:auto;padding-bottom:4px}.card{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--c,#999);border-radius:8px;padding:10px 12px;min-width:260px;max-width:420px;flex:1 1 300px}
+.card h3{font-size:13px;margin:0 0 6px}.card ol,.card ul{margin:4px 0 4px 18px;padding:0}.card li{margin:1px 0;font-size:12.5px}.card .k{color:var(--mute);font-size:11.5px}
+.arrow{grid-column:2;color:var(--mute);font-size:18px;line-height:1;margin:0 0 6px 24px}
+details{margin:2px 0}summary{cursor:pointer;color:#2563eb;font-size:12px}pre{white-space:pre-wrap;background:#f3f4f6;border-radius:6px;padding:8px;font-size:12px;margin:4px 0;font-family:inherit}
+table{border-collapse:collapse;width:100%;font-size:12.5px;background:#fff}th,td{border:1px solid var(--line);padding:5px 7px;vertical-align:top;text-align:left}th{background:#1f4a7d;color:#fff;position:sticky;top:0}
+td.ok{background:#f0fdf4}td.warn{background:#fffbeb}td.bad{background:#fef2f2}.small{font-size:11.5px;color:var(--mute)}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}.note{background:#fff7ed;border:1px solid #fdba74;border-radius:8px;padding:10px 12px;margin:10px 0}
+.hdr{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}.hdr a{font-size:12px}
+@media (max-width:640px){.stage{grid-template-columns:1fr}.arrow{grid-column:1;margin-left:8px}.card{min-width:85vw}}
+@media print{.cards{display:block}.card{max-width:none;break-inside:avoid;margin-bottom:8px}}
+</style></head><body><div class="wrap"><div class="hdr"><div><h1>【L2】エモクリ養成オンライン講座 <span class="small">login 97908</span></h1><div class="sub">面談申し込み→実施→面談後の動線（LSTEP設定の読み取り・2026-10-01 19:49 時点）</div></div><div><a href="index.html">口座一覧</a>　<a href="compare.html">27口座の比較表</a></div></div><h2 style="margin-top:6px">📏 標準フローとの違い <span class="small">（標準＝<a href="flow_standard.html">標準フロー</a>／出典 <a href="https://docs.google.com/spreadsheets/d/19GNl5BMKsFqgan61iF7gbqGX8aNTClmy6hUVmOdMkgQ/edit#gid=1811085342" target="_blank">Lステ設定</a>）</span></h2><table style="margin-bottom:14px"><tr><th style="width:120px">工程</th><th>標準の型</th><th>この口座</th><th style="width:60px">判定</th></tr><tr><td>① 入口</td><td class="small">審査申込フォームを挟まず、LP・リッチメニューからカレンダーへ直接予約</td><td class="warn">審査申込フォーム（2本）に回答→回答後に自動でカレンダー案内</td><td class="warn">≠ 違う</td></tr><tr><td>④ カレンダー</td><td class="small">面談カレンダー1本。CS担当者ごとの非表示枠で自動振り分け・[予約中]の人は予約不可</td><td class="warn">面談カレンダー1本（M.F.U審査面談【L2】: 枠4）・[予約中]による予約制限なし</td><td class="warn">≠ 違う</td></tr><tr><td>④ 予約完了時</td><td class="small">「予約日時の確認」＋「予約確認カルーセル」を送り、OK！タップで要項とヒアリングフォーム依頼。24時間未反応なら自動キャンセル</td><td class="warn">予約確認カルーセルなし・24時間自動キャンセルなし・テンプレ送信 1本</td><td class="warn">≠ 違う</td></tr><tr><td>④ CS担当者の決まり方</td><td class="small">予約枠（CS担当者）に応じて【条件ON】で担当者タグを追加→タグのアクションで CS担当者／本名／面談URL／対応マーク を自動代入</td><td class="warn">予約枠別の条件付きタグあり・タグのアクションに欠け（3人分: 藤井 優輔△／佐藤 龍哉△／米林 大貴△）</td><td class="warn">≠ 違う</td></tr><tr><td>④ キャンセル時</td><td class="small">[予約中]解除・対応マーク「予約キャンセル」・[キャンセル日]に実行日</td><td class="warn">設定なし</td><td class="warn">≠ 違う</td></tr><tr><td>⑤ リマインダ</td><td class="small">前日20:02／当日8:02／開始30分前 の3本</td><td class="warn">1日前 00:05</td><td class="warn">≠ 違う</td></tr><tr><td>⑥ 面談後</td><td class="small">郵送書面送付先フォームの回答で [実施][F成約]タグ＋成約日を自動記録。実施／失注／成約見込などは手動タグ</td><td class="ok">郵送書面フォームあり・記録用タグ6本・友だち情報12項目</td><td class="ok">＝ 同じ</td></tr></table><div class="note"><b>手動操作の可能性（CS担当者に確認）</b><ul><li>予約変更時アクション未設定のカレンダーあり→変更連絡は手動の可能性</li><li>カレンダー案内シナリオがアクションから購読されていない→CSが手動で購読させている可能性: 3-2／CS日程調整リマインド_結斗さん</li></ul></div><div class="stage"><div class="lab">① 入口<small>フォーム／カレンダーへの誘導</small></div><div class="cards"><div class="card" style="--c:var(--s1)"><h3>リッチメニュー</h3><ul><li>「中型堀）M.F.U 申し込み」→ カレンダー: 短縮リンク https://lstep.app/nVQx9ig</li><li>「M.F.U審査申込」→ カレンダー: 短縮リンク https://lstep.app/nVQx9ig</li><li>「Day1」→ カレンダー: 短縮リンク https://lstep.app/rTxBi4E</li><li>「Day2①」→ カレンダー: 短縮リンク https://lstep.app/rTxBi4E</li><li>「Day3①」→ カレンダー: 短縮リンク https://lstep.app/rTxBi4E</li><li>「Day4①」→ カレンダー: 短縮リンク https://lstep.app/rTxBi4E</li></ul></div><div class="card" style="--c:var(--s1)"><h3>シナリオ配信からの誘導</h3><ul><li>「3-2」0日目 16:00 → カレンダー: 短縮リンク https://lstep.app/nVQx9ig〈手動購読の可能性〉</li><li>「審査前ヒアリングシート_リマインド」0日目 08:43 → フォーム: 審査前ヒアリングフォーム〈手動購読の可能性〉</li><li>「CS日程調整リマインド_結斗さん」1日目 08:07 → カレンダー: 短縮リンク https://liff.line.me/2006058864-E9d5B2Dg?liff_id=2006058864-〈手動購読の可能性〉</li><li>「CS日程調整リマインド」0日目 00:23 → カレンダー: 短縮リンク https://liff.line.me/2006058864-E9d5B2Dg?liff_id=2006058864-〈自動（アクションから購読）〉</li></ul></div></div></div><div class="arrow">↓</div><div class="stage"><div class="lab">② 審査申込フォーム<small>回答後に自動で起きること</small></div><div class="cards"><div class="card" style="--c:var(--s2)"><h3>M.F.U審査フォーム（Googleカレンダー連携用）<span class="badge">回答 0</span> <span class="badge ok">カレンダー案内あり</span></h3><details><summary>設問 7問</summary><ul><li>M.F.U審査フォーム</li><li>①姓（漢字）（必須）</li><li>名（漢字）（必須）</li><li>②年齢</li><li>③職業</li><li>④性別</li><li>④エモーショナル映像クリエイターになるための意気込みを教えて下さい！（必須）</li></ul></details><div class="k">回答後アクション</div><ol><li>タグ[審査申し込み]を追加</li><li>テンプレ[シーケンス解説動画](時刻指定)を送信<details><summary>文言: シーケンス解説動画</summary><pre>[name]さん、M.F.Uへの審査申し込み、ありがとうございます。
+
+最後の特典として、
+
+❏＝＝＝＝＝＝＝＝＝＝＝＝＝❏
+
+🎁 プロの映像クリエイターに
+　よるシーケンス公開解説動画
+
+❏＝＝＝＝＝＝＝＝＝＝＝＝＝❏
+
+をプレゼントいたします。
+
+この解説動画をご視聴後、
+
+内容を踏まえたアウトプット
+￣￣￣￣￣￣￣￣￣￣￣￣￣￣
+をお願いしております。
+
+後ほど、解説動画に関するアウトプットのご案内をいたしますので、案内に沿ってご記入をお願いいたします。
+
+まずは、特典であるシーケンス解説動画のご視聴ください☺️
+
+P.S.
+本動画は、M.F.U生に向けて実際に行われた解説を収録したもので、他では手に入らない貴重な内容となっております。
+
+そのため、第三者への共有はお控えいただけますと幸いです。
+
+⏬シーケンス公開解説動画⏬
+👉https://lstep.app/iWJ0Cbw</pre></details></li><li>友だち情報 [申込日] に(アクションの実行日時)を代入</li><li>シナリオ[CS日程調整リマインド]を開始</li><li>メニューを消す</li><li>テンプレ[プロダクト動画特典]を送信<details><summary>文言: プロダクト動画特典</summary><pre>[name]さん、審査フォームの送信ありがとうございます！
+
+お約束していた特典をお渡しします。
+
+Premiere Proの立ち上げから1本の映像が完成するまでの編集の全工程を収録した動画です。
+
+⏬特典動画はこちら⏬
+https://player.vimeo.com/video/1081212869?h=5ac1d47354&amp;autoplay=1&amp;loop=1&amp;muted=1&amp;controls=0
+
+⚠️こちらはM.F.U生向けの有料コンテンツになりますので、第三者への共有はお控えいただけますと幸いです。</pre></details></li></ol></div><div class="card" style="--c:var(--s2)"><h3>審査前ヒアリングフォーム<span class="badge">回答 59</span> <span class="badge warn">カレンダー案内なし</span></h3><details><summary>設問 14問</summary><ul><li>審査前ヒアリングフォーム</li><li>性別（必須）</li><li>年齢（必須）</li><li>居住地（必須）</li><li>趣味（必須）</li><li>クリエイター経験（必須）</li><li>今の仕事は楽しいですか？</li><li>制限を設けず、将来思い描く理想の姿をありのまま自由に記載してください。</li><li>5年後、あなたはどのような姿になっていたいですか？ありのまま記載してください。（必須）</li><li>次に3年後、あなたはどのような姿になっていたいですか？ありのまま記載してください。（必須）</li><li>最後に1年後、あなたはどのような姿になっていたいですか？ありのまま記載してください。（必須）</li><li>現状のまま進んで行った先にどんな未来が待っていると思いますか？</li><li>理想の姿を思い描いたときに比べて今の現状はどうですか？</li><li>最後にこのM.F.U（エモクリ）を通して自分をどう成長させたいですか？</li></ul></details><div class="k">回答後アクション</div><ol><li>タグ[面談前ワーク回答済み]を追加</li></ol></div></div></div><div class="arrow">↓</div><div class="stage"><div class="lab">③ 日程調整<small>カレンダーURLをどう届けるか</small></div><div class="cards"><div class="card" style="--c:var(--s3)"><h3>カレンダー案内の経路</h3><ul><li>フォーム「M.F.U審査フォーム（Googleカレンダー連携用）」の回答後に自動送信</li><li>シナリオ「3-2」〈手動購読の可能性〉→ 短縮リンク https://lstep.app/nVQx9ig</li><li>シナリオ「CS日程調整リマインド_結斗さん」〈手動購読の可能性〉→ 短縮リンク https://liff.line.me/2006058864-E9d5B2Dg?liff_id=2006058864-</li><li>シナリオ「CS日程調整リマインド」〈自動（アクションから購読）〉→ 短縮リンク https://liff.line.me/2006058864-E9d5B2Dg?liff_id=2006058864-</li><li>リッチメニュー「中型堀）M.F.U 申し込み」→ 短縮リンク https://lstep.app/nVQx9ig</li><li>リッチメニュー「M.F.U審査申込」→ 短縮リンク https://lstep.app/nVQx9ig</li><li>リッチメニュー「Day1」→ 短縮リンク https://lstep.app/rTxBi4E</li><li>リッチメニュー「Day2①」→ 短縮リンク https://lstep.app/rTxBi4E</li><li>リッチメニュー「Day3①」→ 短縮リンク https://lstep.app/rTxBi4E</li><li>リッチメニュー「Day4①」→ 短縮リンク https://lstep.app/rTxBi4E</li></ul></div></div></div><div class="arrow">↓</div><div class="stage"><div class="lab">④ カレンダー予約<small>面談系 1本</small></div><div class="cards"><div class="card" style="--c:var(--s4);min-width:340px"><h3>M.F.U審査面談【L2】</h3><div class="k">受付 14日前〜1日前／単位 30分／本人の変更 不可・キャンセル 不可／同時予約 制限なし</div><div class="k">取得項目: お名前／お名前(カナ)</div><details><summary>予約枠 4（CS担当者）</summary><ul><li>佐藤 龍哉（優先度 1・非表示）</li><li>米林 大貴（優先度 2・非表示）</li><li>藤井 優輔（優先度 2・非表示）</li><li>伊東 あかり（優先度 -1・非表示）</li></ul></details><div class="k" style="margin-top:6px"><b>予約完了時</b></div><ol><li>【条件ON】タグ[佐藤 龍哉]を追加 <span class="k">〔条件: カレンダー予約 【M.F.U審査面談【L2】】 予約枠:【佐藤 龍哉】 ステータス:【予約済み】〕</span></li><li>【条件ON】タグ[米林 大貴]を追加 <span class="k">〔条件: カレンダー予約 【M.F.U審査面談【L2】】 予約枠:【米林 大貴】 ステータス:【予約済み】〕</span></li><li>【条件ON】タグ[藤井 優輔]を追加 <span class="k">〔条件: カレンダー予約 【M.F.U審査面談【L2】】 予約枠:【藤井 優輔】 ステータス:【予約済み】〕</span></li><li>【条件ON】タグ[伊東 あかり]を追加 <span class="k">〔条件: カレンダー予約 【M.F.U審査面談【L2】】 予約枠:【伊東 あかり】 ステータス:【予約済み】〕</span></li><li>シナリオを停止</li><li>テキスト[[name]さま...]を送信</li><li>テンプレ[シーケンス解説動画](時刻指定)を送信<details><summary>文言: シーケンス解説動画</summary><pre>[name]さん、M.F.Uへの審査申し込み、ありがとうございます。
+
+最後の特典として、
+
+❏＝＝＝＝＝＝＝＝＝＝＝＝＝❏
+
+🎁 プロの映像クリエイターに
+　よるシーケンス公開解説動画
+
+❏＝＝＝＝＝＝＝＝＝＝＝＝＝❏
+
+をプレゼントいたします。
+
+この解説動画をご視聴後、
+
+内容を踏まえたアウトプット
+￣￣￣￣￣￣￣￣￣￣￣￣￣￣
+をお願いしております。
+
+後ほど、解説動画に関するアウトプットのご案内をいたしますので、案内に沿ってご記入をお願いいたします。
+
+まずは、特典であるシーケンス解説動画のご視聴ください☺️
+
+P.S.
+本動画は、M.F.U生に向けて実際に行われた解説を収録したもので、他では手に入らない貴重な内容となっております。
+
+そのため、第三者への共有はお控えいただけますと幸いです。
+
+⏬シーケンス公開解説動画⏬
+👉https://lstep.app/iWJ0Cbw</pre></details></li><li>タグ[審査申し込み]を追加</li><li>友だち情報 [申込日] に(アクションの実行日時)を代入</li><li>メニューを消す</li></ol><div class="k"><b>予約変更時</b></div><p class="k">設定なし</p><div class="k"><b>キャンセル時</b></div><p class="k">設定なし</p><details><summary>📏 このカレンダーの標準との差 ⚠️13件</summary><ul class="small"><li>受付開始: 標準「5日前（難しければ7日前）」→ 実際「14日前」</li><li>受付締切: 標準「18時間前（難しければ24時間前）」→ 実際「1日前」</li><li>友だちによる変更・キャンセル: 標準「両方とも許可」→ 実際「変更=不可・キャンセル=不可」</li><li>予約枠: 標準「CS担当者ごとの枠・全部非表示・タグ[予約中]を除外」→ 実際「枠4・非表示4・予約中除外0」</li><li>予約完了時 担当者タグの解除: 標準「タグフォルダ[【CS】担当者]を解除」→ 実際「【条件ON】タグ[佐藤 龍哉]を追加 / 【条件ON】タグ[米林 大貴]を追加 / 【条件ON】タグ[藤井 優輔]を追加 / 【条件ON】タグ[伊東 あかり]を追加 / シナリオを停止 / テキスト[[name]さま...]を送信 / テンプレ[シーケンス解説動画](時刻指定)を送信 / タグ[審査申し込み]を追加 /」</li><li>予約完了時 キャンセル日: 標準「[キャンセル日]を消去」→ 実際「消去なし」</li><li>予約完了時 状態タグ: 標準「タグ[予約中][申込][予約]を追加」→ 実際「[予約中]追加なし」</li><li>予約完了時 予約確認カルーセル: 標準「「予約日時の確認」＋「予約確認カルーセル（OK！タップで要項・ヒアリング依頼）」」→ 実際「カルーセルなし（テンプレ送信 1本）」</li><li>予約完了時 24時間無反応の自動キャンセル: 標準「シナリオ[予約後メッセージ]を開始（22時間後リマインド→24時間後自動キャンセル）」→ 実際「なし」</li><li>キャンセル時 予約中タグ: 標準「タグ[予約中]を解除」→ 実際「設定なし」</li><li>キャンセル時 対応マーク: 標準「対応マークに予約キャンセルを代入」→ 実際「なし」</li><li>キャンセル時 キャンセル日: 標準「[キャンセル日]に実行日を代入」→ 実際「なし」</li><li>リマインダ: 標準「1日前 20:02／0日前 08:02／開始30分前 の3本」→ 実際「1日前 00:05」</li></ul></details></div></div></div><div class="arrow">↓</div><div class="stage"><div class="lab">⑤ リマインダ<small>カレンダー内蔵</small></div><div class="cards"><div class="card" style="--c:var(--s5)"><h3>M.F.U審査面談【L2】</h3><ul><li><b>1日前 00:05</b> シナリオ[審査前シナリオ_前日]を開始</li></ul></div></div></div><div class="arrow">↓</div><div class="stage"><div class="lab">⑥ 面談実施→面談後<small>記録に使う項目</small></div><div class="cards"><div class="card" style="--c:var(--s6)"><h3>CS担当者タグのアクション（担当者が決まった時）</h3><table><tr><th>タグ</th><th>CS担当者</th><th>本名</th><th>面談URL</th><th>対応マーク</th></tr><tr><td>藤井 優輔</td><td class="ok">✅</td><td class="ok">✅</td><td class="warn">—</td><td class="ok">✅</td></tr><tr><td>佐藤 龍哉</td><td class="ok">✅</td><td class="ok">✅</td><td class="warn">—</td><td class="ok">✅</td></tr><tr><td>米林 大貴</td><td class="ok">✅</td><td class="ok">✅</td><td class="warn">—</td><td class="ok">✅</td></tr></table></div><div class="card" style="--c:var(--s6)"><h3>面談後の記録</h3><div class="k">友だち情報</div><ul><li>キャンセル日</li><li>実施日</li><li>成約日</li><li>日付チェック完了日</li><li>キャンセル理由</li><li>着座理由</li><li>真の欲求</li><li>失注理由</li><li>成約理由</li><li>支払方法</li><li>支払プラン</li><li>録画URL</li></ul><div class="k">タグ</div><ul><li>面接済み</li><li>面接辞退</li><li>成約</li><li>不成約</li><li>クーリングオフ</li><li>成約見込</li></ul><div class="k">フォーム</div><ul><li>【その他】郵送書面送付先情報記入フォーム</li><li>【通常購入者専用】郵送書面送付先情報記入フォーム</li></ul></div></div></div><h2 style="margin-top:18px">通知・その他</h2><div class="cols"><div class="card"><h3>通知（誰に・いつ）</h3><ul><li>【L2】エモクリ養成オンライン講座_@248msbar → PA管理（有効；service_send_count_full・service_send_count_warning）</li><li>【L2】EMEU_個別返信 → 神谷駿斗（有効；message_normal・salon_reservation_reserved・service_send_count_full・service_send_count_warning）</li></ul></div><div class="card"><h3>面談以外のカレンダー（対象外・名前のみ）</h3><ul><li>Webinar日程調整（夜開催_ロング広告専用）［ウェビナー・日程調整］</li><li>再放送用_日程調整（夜開催）［ウェビナー・日程調整］</li><li>Webinar日程調整（昼開催）［ウェビナー・日程調整］</li><li>Webinar日程調整（夜開催）［ウェビナー・日程調整］</li><li>クイック　カレンダー予約［その他］</li><li>無題のカレンダー［テスト・無題］</li></ul></div><div class="card"><h3>暫定標準（Lステ設定）との差 <span class="badge warn">⚠️ 14 / 19</span></h3><details><summary>⚠️ の一覧</summary><ul><li>No.22 M.F.U審査面談【L2】: 受付開始: 標準「5日前（難しければ7日前）」→ 実際「14日前」</li><li>No.23 M.F.U審査面談【L2】: 受付締切: 標準「18時間前（難しければ24時間前）」→ 実際「1日前」</li><li>No.28/29 M.F.U審査面談【L2】: 友だちによる変更・キャンセル: 標準「両方とも許可」→ 実際「変更=不可・キャンセル=不可」</li><li>No.36 M.F.U審査面談【L2】: 予約枠: 標準「CS担当者ごとの枠・全部非表示・タグ[予約中]を除外」→ 実際「枠4・非表示4・予約中除外0」</li><li>No.50 M.F.U審査面談【L2】: 予約完了時 担当者タグの解除: 標準「タグフォルダ[【CS】担当者]を解除」→ 実際「【条件ON】タグ[佐藤 龍哉]を追加 / 【条件ON】タグ[米林 大貴]を追加 / 【条件ON】タグ[藤井 優輔]を追加 / 【条件ON】タグ[伊東 あかり]を追加 / シナリオを停止 / テキスト[[name]さま...]を送信 / テンプレ[シーケンス解説動画](時刻指定)を送信 / タグ[審査申し込み]を追加 /」</li><li>No.52 M.F.U審査面談【L2】: 予約完了時 キャンセル日: 標準「[キャンセル日]を消去」→ 実際「消去なし」</li><li>No.53 M.F.U審査面談【L2】: 予約完了時 状態タグ: 標準「タグ[予約中][申込][予約]を追加」→ 実際「[予約中]追加なし」</li><li>No.55/56 M.F.U審査面談【L2】: 予約完了時 予約確認カルーセル: 標準「「予約日時の確認」＋「予約確認カルーセル（OK！タップで要項・ヒアリング依頼）」」→ 実際「カルーセルなし（テンプレ送信 1本）」</li><li>No.57 M.F.U審査面談【L2】: 予約完了時 24時間無反応の自動キャンセル: 標準「シナリオ[予約後メッセージ]を開始（22時間後リマインド→24時間後自動キャンセル）」→ 実際「なし」</li><li>No.60 M.F.U審査面談【L2】: キャンセル時 予約中タグ: 標準「タグ[予約中]を解除」→ 実際「設定なし」</li><li>No.61 M.F.U審査面談【L2】: キャンセル時 対応マーク: 標準「対応マークに予約キャンセルを代入」→ 実際「なし」</li><li>No.62 M.F.U審査面談【L2】: キャンセル時 キャンセル日: 標準「[キャンセル日]に実行日を代入」→ 実際「なし」</li><li>No.65-69 M.F.U審査面談【L2】: リマインダ: 標準「1日前 20:02／0日前 08:02／開始30分前 の3本」→ 実際「1日前 00:05」</li><li>No.10 CS担当者タグのアクション: 標準「CS担当者／本名フルネーム／面談URL／対応マーク の4点を代入」→ 実際「3人分: 藤井 優輔(CS本名-マーク)／佐藤 龍哉(CS本名-マーク)／米林 大貴(CS本名-マーク)」</li></ul></details></div></div><p class="small" style="margin-top:14px">生成 2026-10-01 20:56／読み取り専用（LSTEPには何も書いていません）／表（Googleスプレッドシート）と同じデータから自動生成</p></div></body></html>
